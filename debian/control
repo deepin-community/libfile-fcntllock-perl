@@ -1,0 +1,26 @@
+Source: libfile-fcntllock-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Julián Moreno Patiño <julian@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9.20120312~),
+               perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libfile-fcntllock-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libfile-fcntllock-perl.git
+Homepage: https://metacpan.org/release/File-FcntlLock
+
+Package: libfile-fcntllock-perl
+Architecture: any
+Depends: ${perl:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Suggests: gcc | c-compiler
+Description: Perl module for file locking with fcntl(2)
+ File::FcntlLock is a Perl module to do file locking in an object oriented
+ fashion using the fcntl(2) system call. This allows locks on parts of a file 
+ as well as on the whole file and overcomes some known problems with flock(2), 
+ on which Perl's flock() function is based.
+ .
+ Furthermore due to its design it supports reliable locking over NFS.

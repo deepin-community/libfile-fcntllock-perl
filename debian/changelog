@@ -1,0 +1,109 @@
+libfile-fcntllock-perl (0.22-3) unstable; urgency=medium
+
+  * Team upload.
+
+  * Demote c-compiler Recommends to a Suggests.
+    While this is needed for File::FcntlLock::Inline, it means that gcc gets
+    pulled into e.g. images since libdpkg-perl recommends
+    libfile-fcntllock-perl.
+    (Taken from Ubuntu.)
+  * Add File/FcntlLock/Inline.pm to debian/tests/pkg-perl/skip-syntax
+    which would need a c-compiler.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 11 Sep 2015 16:52:34 +0200
+
+libfile-fcntllock-perl (0.22-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add "gcc | c-compiler" to Recommends, needed by
+    File::FcntlLock::Inline. (Closes: #783760)
+  * Declare compliance with Debian Policy 3.9.6.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 03 May 2015 17:46:22 +0200
+
+libfile-fcntllock-perl (0.22-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #756629)
+  * Update my email.
+  * Extend debian copyright holder years.
+
+ -- Julián Moreno Patiño <julian@debian.org>  Thu, 31 Jul 2014 16:33:25 -0500
+
+libfile-fcntllock-perl (0.20-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    Fix for test failure on hurd-i386.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 27 May 2014 17:03:54 +0200
+
+libfile-fcntllock-perl (0.19-1) unstable; urgency=medium
+
+  * Team upload
+  * Imported Upstream version 0.19
+    Fixes test failures since 0.16 on 32-bit architectures
+
+ -- Damyan Ivanov <dmn@debian.org>  Tue, 27 May 2014 10:55:12 +0300
+
+libfile-fcntllock-perl (0.18-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 26 May 2014 20:32:26 +0200
+
+libfile-fcntllock-perl (0.16-1) unstable; urgency=low
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Damyan Ivanov ]
+  * Imported Upstream version 0.16
+  * bump uears of upstream copyright
+  * declare conformance with Policy 3.9.5 (no changes needed)
+
+ -- Damyan Ivanov <dmn@debian.org>  Mon, 26 May 2014 11:04:16 +0300
+
+libfile-fcntllock-perl (0.14-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.3.
+    + Update to DEP5 copyright format 1.0.
+      + Extend debian copyright years.
+  * Bump debhelper version to 9 in B-D.
+    + Switch compat level 8 to 9 to use
+      hardening flags.
+
+ -- Julián Moreno Patiño <darkjunix@gmail.com>  Mon, 11 Jun 2012 12:05:07 -0500
+
+libfile-fcntllock-perl (0.14-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Julián Moreno Patiño <darkjunix@gmail.com>  Sat, 29 Oct 2011 13:24:41 -0500
+
+libfile-fcntllock-perl (0.13-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Remove patch, applied upstream.
+  * Update years of upstream copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 15 Oct 2011 22:25:21 +0200
+
+libfile-fcntllock-perl (0.12-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #645014)
+
+ -- Julián Moreno Patiño <darkjunix@gmail.com>  Tue, 11 Oct 2011 14:38:24 -0500
